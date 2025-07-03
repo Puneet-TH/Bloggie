@@ -18,9 +18,16 @@ function Home() {
                 <Container>
                     <div className="flex flex-wrap">
                         <div className="p-2 w-full">
-                            <h1 className="text-2xl font-bold hover:text-gray-900">
+                            <h1 className="text-2xl font-bold text-amber-100 hover:text-gray-500">
                                 Login to read posts
                             </h1>
+                        </div>
+                        <div className="p-6 w-full flex justify-center">
+                            <img 
+                                src="https://steamforged.com/cdn/shop/files/DSBG-Key-BG-Wide.jpg?v=1633427791&width=3000" 
+                                alt="Hero" 
+                                style={{ maxWidth: "100%", maxHeight: "800px", objectFit: "cover", borderRadius: "12px" }}
+                            />
                         </div>
                     </div>
                 </Container>
