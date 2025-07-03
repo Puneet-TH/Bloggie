@@ -5,6 +5,7 @@ import{login, logout} from "./store/authSlice"
 import './App.css'
 import { Header, Footer } from './components'
 import { Outlet } from 'react-router-dom'
+import Logo from './assets/darksouls3.jpg'
 
 function App() {
     const [loading, setLoading] = useState(true)
@@ -23,7 +24,7 @@ function App() {
     }, [dispatch])
   
     return !loading ? (
-        <div className='min-h-screen flex flex-wrap content-between bg-[url(./src/assets/darksouls3.jpg)] bg-cover'>
+        <div className="min-h-screen flex flex-wrap content-between bg-cover" style={{ backgroundImage: `url(${Logo})` }}>
             <div className='w-full block'>
                 <Header/>
                 <main>
